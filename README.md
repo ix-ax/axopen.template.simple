@@ -1,4 +1,4 @@
-# WORK IN PROGRESS
+# WORK IN PROGRESS. NOTHING READY YET. STAY TUNED.
 
 # AXOpen simple Blazor application template 
 
