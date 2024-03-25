@@ -8,7 +8,19 @@
 		<UseProjectReference>true</UseProjectReference>
 	</PropertyGroup>
 	
-	<ItemGroup Condition="'$(UseProjectReference)' == 'true'">		
+	<ItemGroup>
+		<Compile Include=".g\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include=".meta\" />
+		<Content Include=".meta\**" />
+		<Compile Include="..\..\ax\src\templates\starterunit\twin\StarterUnitTemplate.cs" Link="Context\Units\StarterUnitTemplate.cs" />
+		<Compile Include="..\..\ax\src\templates\unit\twin\UnitTemplateServices.cs" Link="Context\Units\UnitTemplateServices.cs" />
+	</ItemGroup>
+
+	<!--PROJECTS-->
+	<ItemGroup>		
 		<ProjectReference Include="..\..\..\axopen\src\simatic1500\ctrl\ix\ix_ax_axopen_simatic1500.csproj" />
 		<ProjectReference Include="..\..\..\axopen\src\data\src\AXOpen.Data\ix_ax_axopen_data.csproj" />
 		<ProjectReference Include="..\..\..\axopen\src\inspectors\src\AXOpen.Inspectors\ix_ax_axopen_inspectors.csproj" />
@@ -29,20 +41,11 @@
 		<ProjectReference Include="..\..\..\axopen\src\components.ur.robotics\src\AXOpen.Components.Ur.Robotics\ix_ax_axopen_components_ur_robotics.csproj" />
 		<PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.198" />
 	</ItemGroup>
+	<!--PROJECTS-->
 
-	<ItemGroup>
-		<Compile Include=".g\**" />
-	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include=".meta\" />
-		<Content Include=".meta\**" />
-		<Compile Include="..\..\ax\src\templates\starterunit\twin\StarterUnitTemplate.cs" Link="Context\Units\StarterUnitTemplate.cs" />
-		<Compile Include="..\..\ax\src\templates\unit\twin\UnitTemplateServices.cs" Link="Context\Units\UnitTemplateServices.cs" />
-	</ItemGroup>
-
-	<!-- <ItemGroup>
-	  <PackageReference Include="AXOpen.Abstractions" Version="0.4.3-dev-2311.788" />
+	<!--PACKAGES
+	 <ItemGroup>
 	  <PackageReference Include="AXOpen.Components.Abb.Robotics" Version="0.4.3-dev-2311.788" />
 	  <PackageReference Include="AXOpen.Components.Abstractions" Version="0.4.3-dev-2311.788" />
 	  <PackageReference Include="AXOpen.Components.Cognex.Vision" Version="0.4.3-dev-2311.788" />
@@ -61,8 +64,9 @@
 	  <PackageReference Include="AXOpen.S71500" Version="0.4.3-dev-2311.788" />
 	  <PackageReference Include="AXOpen.Timers" Version="0.4.3-dev-2311.788" />
 	  <PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.198" />
-	</ItemGroup> -->
-
+	</ItemGroup>
+	PACKAGES-->
+	
 	<ItemGroup>
 		<Compile Update="Resources\PlcStringResources.Designer.cs">
 			<DesignTime>True</DesignTime>
