@@ -1,3 +1,5 @@
+# WORK IN PROGRESS. NOTHING READY YET. STAY TUNED.
+
 # AXOpen simple Blazor application template 
 
 **IMPORTANT!!! When you create the project from Visual Studio, you will need to run `install.ps1` manually to finish creating the project.**
