@@ -27,6 +27,7 @@
 		<ProjectReference Include="..\..\..\axopen\src\components.abb.robotics\src\AXOpen.Components.Abb.Robotics\ix_ax_axopen_components_abb_robotics.csproj" />
 		<ProjectReference Include="..\..\..\axopen\src\components.mitsubishi.robotics\src\AXOpen.Components.Mitsubishi.Robotics\ix_ax_axopen_components_mitsubishi_robotics.csproj" />
 		<ProjectReference Include="..\..\..\axopen\src\components.ur.robotics\src\AXOpen.Components.Ur.Robotics\ix_ax_axopen_components_ur_robotics.csproj" />
+		<PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.198" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -40,9 +41,27 @@
 		<Compile Include="..\..\ax\src\templates\unit\twin\UnitTemplateServices.cs" Link="Context\Units\UnitTemplateServices.cs" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.197" />
-	</ItemGroup>
+	<!-- <ItemGroup>
+	  <PackageReference Include="AXOpen.Abstractions" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Abb.Robotics" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Abstractions" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Cognex.Vision" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Drives" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Elements" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Festo.Drives" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Mitsubishi.Robotics" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Pneumatics" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Rexroth.Drives" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Rexroth.Press" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Components.Ur.Robotics" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Core" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Data" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Data.MongoDb" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Inspectors" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.S71500" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXOpen.Timers" Version="0.4.3-dev-2311.788" />
+	  <PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.198" />
+	</ItemGroup> -->
 
 	<ItemGroup>
 		<Compile Update="Resources\PlcStringResources.Designer.cs">

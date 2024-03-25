@@ -36,27 +36,34 @@
 		<Content Include="..\..\ax\src\templates\unit\server\UnitTemplate.razor" Link="Pages\Context\Units\UnitTemplate.razor" />
 	</ItemGroup>
 
-	<!--<ItemGroup Condition="'$(UseProjectReference)' == 'false'">
-		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
-		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.11" />
+	<!-- <ItemGroup>
+		<PackageReference Include="AXOpen.Components.Abb.Robotics.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Abstractions" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Cognex.Vision.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Drives.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Elements.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Festo.Drives.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Mitsubishi.Robotics.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Pneumatics.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Rexroth.Drives.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Rexroth.Press.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Components.Ur.Robotics" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Core.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Data.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Data.MongoDb" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Inspectors.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Logging.Serilog" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXOpen.Security.Blazor" Version="0.4.3-dev-2311.788" />
+		<PackageReference Include="AXSharp.Connector.S71500.WebAPI" Version="0.18.0-alpha.198" />
+	</ItemGroup> -->
 
-		<PackageReference Include="AXOpen.Data.InMemory" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Data.Json" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Data.MongoDB" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Security.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Cognex.Vision.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Components.Elements.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Components.Pneumatics.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Data.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.Inspectors.Blazor" Version="0.4.3-alpha.229" />
-		<PackageReference Include="AXOpen.VisualComposer" Version="0.4.3-alpha.229" />
-
-		<ProjectReference Include="..\twin\axosimple.csproj" />
-	</ItemGroup>-->
+	<ItemGroup>
+	  <ProjectReference Include="..\twin\axosimple.csproj" />
+	</ItemGroup>
 
 	<ItemGroup Condition="'$(UseProjectReference)' == 'true'">
-		<!-- <PackageReference Include="Microsoft.Extensions.Localization" />
-		<PackageReference Include="Serilog.Sinks.Console" /> -->
+		<!--<PackageReference Include="Microsoft.Extensions.Localization" />
+		<PackageReference Include="Serilog.Sinks.Console" />-->
 		
 		<ProjectReference Include="..\..\..\axopen\src\base\src\AXOpen.Logging\AXOpen.Logging.Serilog.csproj" />
 		<ProjectReference Include="..\..\..\axopen\src\core\src\AXOpen.Core.Blazor\axopen_core_blazor.csproj" />
